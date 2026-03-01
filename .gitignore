@@ -18,3 +18,4 @@ bendera-vscode-webview-elements-*.tgz
 vscode-elements-elements-*.tgz
 custom-elements.json
 vscode.*-custom-data.json
+angular/dist

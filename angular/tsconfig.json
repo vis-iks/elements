@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "outDir": "./dist"
+  },
+  "include": ["projects/elements/src/lib/**/*.ts"],
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "flatModuleOutFile": "index.js",
+    "flatModuleId": "@vscode-elements/angular-elements"
+  }
+}

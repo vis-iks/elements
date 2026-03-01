@@ -15,6 +15,7 @@
   "customElements": "custom-elements.json",
   "scripts": {
     "build": "wireit",
+    "build:angular": "node scripts/generate-angular.mjs",
     "build:ts": "wireit",
     "build:watch": "wireit",
     "clean": "rimraf -g .wireit coverage dist custom-elements.json stats.html vscode.*-custom-data.json tsconfig.tsbuildinfo",
