@@ -6,7 +6,9 @@
   "module": "index.js",
   "type": "module",
   "scripts": {
-    "build": "ngc -p tsconfig.json"
+    "build": "ngc -p tsconfig.json",
+    "storybook": "ng run elements:storybook",
+    "build-storybook": "ng run elements:build-storybook"
   },
   "keywords": [
     "angular",
@@ -20,12 +22,23 @@
     "@vscode-elements/elements": "^2.5.1"
   },
   "devDependencies": {
-    "@angular/core": "^19.0.0",
-    "@angular/compiler-cli": "^19.0.0",
+    "@angular-devkit/architect": "^0.1900.0",
+    "@angular-devkit/build-angular": "^19.0.0",
+    "@angular-devkit/core": "^19.0.0",
     "@angular/compiler": "^19.0.0",
-    "typescript": "^5.0.0",
-    "tslib": "^2.0.0",
+    "@angular/compiler-cli": "^19.0.0",
+    "@angular/core": "^19.0.0",
+    "@angular/platform-browser-dynamic": "^19.0.0",
+    "@compodoc/compodoc": "^1.2.1",
+    "@storybook/addon-a11y": "^8.6.17",
+    "@storybook/addon-docs": "^8.6.17",
+    "@storybook/addon-onboarding": "^8.6.17",
+    "@storybook/angular": "^8.6.17",
+    "eslint-plugin-storybook": "^10.2.13",
     "rxjs": "^7.8.0",
+    "storybook": "^8.6.17",
+    "tslib": "^2.0.0",
+    "typescript": "^5.0.0",
     "zone.js": "~0.14.0"
   }
 }

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "projects": {
+    "elements": {
+      "projectType": "library",
+      "root": "projects/elements",
+      "sourceRoot": "projects/elements/src",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/elements/ng-package.json"
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/elements/.storybook",
+            "browserTarget": "elements:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/elements"
+            ],
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/elements/.storybook",
+            "browserTarget": "elements:build",
+            "compodoc": true,
+            "compodocArgs": [
+              "-e",
+              "json",
+              "-d",
+              "projects/elements"
+            ],
+            "outputDir": "storybook-static"
+          }
+        }
+      }
+    }
+  }
+}

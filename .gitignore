@@ -19,3 +19,7 @@ vscode-elements-elements-*.tgz
 custom-elements.json
 vscode.*-custom-data.json
 angular/dist
+
+*storybook.log
+storybook-static
+angular/projects/elements/documentation.json
